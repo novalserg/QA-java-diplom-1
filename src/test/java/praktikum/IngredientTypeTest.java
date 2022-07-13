@@ -11,10 +11,4 @@ public class IngredientTypeTest {
         assertNotNull(IngredientType.FILLING);
         assertNotNull(IngredientType.SAUCE);
     }
-
-    @Test
-    public void valueOf() {
-        assertNotNull(IngredientType.valueOf("FILLING"));
-        assertNotNull(IngredientType.valueOf("SAUCE"));
-    }
 }

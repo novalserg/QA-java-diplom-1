@@ -38,7 +38,7 @@ public class BurgerTest {
     }
 
     @Test
-    public void removeIngredientTest_shouldThrowWhenNoIngredients() {
+    public void removeIngredientTestShouldThrowWhenNoIngredients() {
         Burger burger = new Burger();
         Bun bun = new Bun("Rye", 1.30f);
         burger.setBuns(bun);
@@ -64,7 +64,7 @@ public class BurgerTest {
     }
 
     @Test
-    public void moveIngredientTest_shouldThrowWhenNoIngredients() {
+    public void moveIngredientTestShouldThrowWhenNoIngredients() {
         Burger burger = new Burger();
         Bun bun = new Bun("Wheat", 1.30f);
         burger.setBuns(bun);
@@ -97,7 +97,7 @@ public class BurgerTest {
     }
 
     @Test
-    public void getPriceTest_shouldThrowWhenNoBunSet() {
+    public void getPriceTestShouldThrowWhenNoBunSet() {
         Burger burger = new Burger();
 
         assertThrows(
@@ -129,7 +129,7 @@ public class BurgerTest {
     }
 
     @Test
-    public void getReceiptTest_shouldThrowWhenNoBunSet() {
+    public void getReceiptTestShouldThrowWhenNoBunSet() {
         // MOCK
         Burger burger = Mockito.spy(new Burger());
 
